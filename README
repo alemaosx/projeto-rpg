@@ -1,0 +1,33 @@
+# 🏴‍☠️ Ficha de Personagem RPG - Dante D. Vance
+
+Projeto desenvolvido para a disciplina de Desenvolvimento Web (HTML5 & CSS3). O objetivo foi criar uma ficha de personagem interativa e responsiva para um RPG com temática pirata, combinando elementos do universo de **One Piece** e **Assassin's Creed IV: Black Flag**.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5**: Estruturação semântica do documento (`<header>`, `<main>`, `<section>`, `<footer>`).
+- **CSS3**: Estilização moderna com CSS Variables, Flexbox, CSS Grid e media queries para responsividade.
+- **Font Awesome (v6.4.0)**: Ícones temáticos de interface e redes sociais.
+- **Google Fonts**: Integração das fontes *Cinzel* e *Open Sans*.
+
+---
+
+## 📌 Funcionalidades da Página
+
+1. **Cabeçalho Fixo (Navbar):** Navegação rápida com links para as principais secções.
+2. **Sobre o Herói:** Apresentação da personagem, dados de origem, recompensa em Berries e biografia.
+3. **Atributos & Habilidades:** Barras de progresso visuais a indicar os pontos fortes de combate e furtividade.
+4. **Inventário & Conquistas:** *Cards* com grelha adaptável (CSS Grid) e indicadores de raridade (*Lendário*, *Raro*, *Comum*).
+5. **Alistar-se à Tripulação (Contato):** Formulário de recrutamento interativo acompanhado por botões com atalhos diretos para GitHub e Discord.
+
+---
+
+## 📂 Estrutura de Ficheiros
+
+```text
+├── index.html
+├── css/
+│   └── style.css
+└── img/
+    └── pirata.jpg

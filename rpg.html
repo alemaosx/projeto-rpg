@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de RPG - Dante D. Vance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Gryphon</h1>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#atr">ATRIBUTOS</a></li>
+                    <li><a href="#inv">INVENTÁRIO</a></li>
+                    <li><a href="#cont">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section id="sobre" class="card-section sobre-section">
+            <div class="avatar-container">
+                <img src="img/pirata.jpg" alt="Avatar do personagem Dante D. Vance" class="avatar-img"> <br>
+                <span class="badge-recompensa">480.000.000 Berries</span>
+            </div>
+
+            <div class="sobre-info">
+                <h2>Dante D. Vance <span class="apelido">(O Ruivo)</span></h2>
+                <p class="cargo-tag">Capitão da Tripulação Gryphon</p>
+
+                <div class="detalhes-grid">
+                    <p><strong>Raça:</strong> Humano</p>
+                    <p><strong>Origem:</strong> Ilha de Havana (North Blue)</p>
+                    <p><strong>Idade:</strong> 25 anos</p>
+                    <p><strong>Akuma no Mi:</strong> Kyō Kyō no Mi (Paramecia da Luz/Invisibilidade)</p>
+                </div>
+
+                <div class="biografia">
+                    <h3>História</h3>
+                    <p>Dante era guardião de uma ordem secreta no North Blue encarregada de proteger os segredos do Século Perdido. Após sua base ser destruída pela Marinha, ele partiu para os mares como um pirata livre e amante de festas. Por trás do sorriso leve, Dante carrega os traumas do passado e luta nas sombras usando a Kyō Kyō no Mi e suas lâminas ocultas para proteger seus companheiros e defender a verdade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="atr" class="card-section">
+            <h2>Atributos & Habilidades</h2>
+            <div class="atributos-list">
+                
+                <div class="atributo-item">
+                    <div class="atributo-header">
+                        <span>Furtividade e Invisibilidade</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="barra-trilho">
+                        <div class="barra-progresso" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="atributo-item">
+                    <div class="atributo-header">
+                        <span>Esgrima e Lâminas Ocultas</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="barra-trilho">
+                        <div class="barra-progresso" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="atributo-item">
+                    <div class="atributo-header">
+                        <span>Domínio da Akuma no Mi</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="barra-trilho">
+                        <div class="barra-progresso" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="inv" class="card-section">
+            <h2>Inventário & Conquistas</h2>
+            <div class="inventario-grid">
+                
+                <div class="card-item lendario">
+                    <div class="card-item-header">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span class="raridade">Lendário</span>
+                    </div>
+                    <h3>Poneglyph Roubado</h3>
+                    <p>Cópias dos segredos antigos resgatados do Almirante.</p>
+                </div>
+
+                <div class="card-item raro">
+                    <div class="card-item-header">
+                        <i class="fa-solid fa-khanda"></i>
+                        <span class="raridade">Raro</span>
+                    </div>
+                    <h3>Lâminas Ocultas de Aço</h3>
+                    <p>Armas duplas para ataques surpresa e letais.</p>
+                </div>
+
+                <div class="card-item comum">
+                    <div class="card-item-header">
+                        <i class="fa-solid fa-compass"></i>
+                        <span class="raridade">Comum</span>
+                    </div>
+                    <h3>Log Pose da Grand Line</h3>
+                    <p>Bússola indispensável para a navegação nos mares.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cont" class="card-section">
+            <h2><i class="fa-solid fa-skull-crossbones"></i> Alistar-se à Tripulação Gryphon</h2>
+            
+            <div class="chamada-bando">
+                <p>Procuras liberdade nos mares e coragem para desafiar o Governo Mundial? Junta-te à tripulação do <strong>Capitão Dante</strong>. Envia o teu sinal de recrutamento ou entra em contacto direto no nosso quartel-general!</p>
+            </div>
+
+            <form class="form-contato" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome"><i class="fa-solid fa-user-ninja"></i> Nome / Codinome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Edward Kenway" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem"><i class="fa-solid fa-envelope-open-text"></i> Sua Mensagem / Função no Bando:</label>
+                    <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conta-nos a tua história, recompensa ou habilidade principal..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Enviar Sinal de Recrutamento</button>
+            </form>
+
+            <div class="redes-sociais">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://discord.com" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i> Discord</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Ficha de RPG | Dante D. Vance</p>
+    </footer>
+
+</body>
+</html>
