@@ -8,25 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="header-container">
             <h1 class="logo">Gryphon</h1>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu">☰</button>
+
             <nav class="nav">
-                <ul class="nav-links">
+                <ul id="nav-links" class="nav-links">
                     <li><a href="#sobre">SOBRE</a></li>
                     <li><a href="#atr">ATRIBUTOS</a></li>
                     <li><a href="#inv">INVENTÁRIO</a></li>
                     <li><a href="#cont">CONTATO</a></li>
+                    <li class="nav-btn-mobile">
+                        <button id="btn-dark-mode" class="btn-dark">🌙 Modo Noturno</button>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main-content">
+
+        <div id="saudacao-visitante" class="saudacao-banner"></div>
 
         <section id="sobre" class="card-section sobre-section">
             <div class="avatar-container">
@@ -48,14 +55,31 @@
                 <div class="biografia">
                     <h3>História</h3>
                     <p>Dante era guardião de uma ordem secreta no North Blue encarregada de proteger os segredos do Século Perdido. Após sua base ser destruída pela Marinha, ele partiu para os mares como um pirata livre e amante de festas. Por trás do sorriso leve, Dante carrega os traumas do passado e luta nas sombras usando a Kyō Kyō no Mi e suas lâminas ocultas para proteger seus companheiros e defender a verdade.</p>
+
+                    <div class="btn-container-central">
+                        <button id="btn-ver-mais" class="btn-ver-mais">📜 Ver história completa</button>
+                    </div>
+
+                    <div id="historia-completa" class="historia-oculta">
+                        <p>Além disso, Dante navega rumo aos confins do mundo para desafiar os altos escalões do Governo Mundial e descobrir o paradeiro do tesouro lendário guardado pelos antigos reis do mar.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="atr" class="card-section">
             <h2>Atributos & Habilidades</h2>
+
+            <div id="secao-xp" class="xp-container">
+                <p><strong>Experiência do Pirata:</strong> <span id="texto-xp">Nível 1 | 20 / 100 XP</span></p>
+                <div class="barra-trilho">
+                    <div id="xp-preenchida" class="barra-progresso" style="width: 20%;"></div>
+                </div>
+                <button id="btn-ganhar-xp" class="btn-xp">Completar Missão (+25 XP)</button>
+                <p id="mensagem-nivel" class="mensagem-nivel"></p>
+            </div>
+
             <div class="atributos-list">
-                
                 <div class="atributo-item">
                     <div class="atributo-header">
                         <span>Furtividade e Invisibilidade</span>
@@ -85,66 +109,52 @@
                         <div class="barra-progresso" style="width: 90%;"></div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section id="inv" class="card-section">
             <h2>Inventário & Conquistas</h2>
-            <div class="inventario-grid">
-                
-                <div class="card-item lendario">
-                    <div class="card-item-header">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                        <span class="raridade">Lendário</span>
-                    </div>
-                    <h3>Poneglyph Roubado</h3>
-                    <p>Cópias dos segredos antigos resgatados do Almirante.</p>
-                </div>
 
-                <div class="card-item raro">
-                    <div class="card-item-header">
-                        <i class="fa-solid fa-khanda"></i>
-                        <span class="raridade">Raro</span>
-                    </div>
-                    <h3>Lâminas Ocultas de Aço</h3>
-                    <p>Armas duplas para ataques surpresa e letais.</p>
-                </div>
-
-                <div class="card-item comum">
-                    <div class="card-item-header">
-                        <i class="fa-solid fa-compass"></i>
-                        <span class="raridade">Comum</span>
-                    </div>
-                    <h3>Log Pose da Grand Line</h3>
-                    <p>Bússola indispensável para a navegação nos mares.</p>
-                </div>
-
+            <div class="inventario-filtros">
+                <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="arma">Armas</button>
+                <button class="filtro-btn" data-filtro="pocao">Poções</button>
+                <button class="filtro-btn" data-filtro="tesouro">Tesouros</button>
+                <button class="filtro-btn" data-filtro="ferramenta">Ferramentas</button>
             </div>
+            <p class="contador-paragrafo"><small id="contador-itens"></small></p>
+
+            <div id="inventario-grid" class="inventario-grid"></div>
         </section>
 
         <section id="cont" class="card-section">
-            <h2><i class="fa-solid fa-skull-crossbones"></i> Alistar-se à Tripulação Gryphon</h2>
-            
+            <h2>Alistar-se à Tripulação Gryphon</h2>
+
             <div class="chamada-bando">
                 <p>Procuras liberdade nos mares e coragem para desafiar o Governo Mundial? Junta-te à tripulação do <strong>Capitão Dante</strong>. Envia o teu sinal de recrutamento ou entra em contacto direto no nosso quartel-general!</p>
             </div>
 
-            <form class="form-contato" action="#" method="POST">
+            <form id="form-guilda" class="form-contato">
                 <div class="form-group">
-                    <label for="nome"><i class="fa-solid fa-user-ninja"></i> Nome / Codinome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Ex: Edward Kenway" required>
+                    <label for="nome-contato">Nome / Codinome:</label>
+                    <input type="text" id="nome-contato" name="nome" placeholder="Ex: Edward Kenway">
                 </div>
                 <div class="form-group">
-                    <label for="mensagem"><i class="fa-solid fa-envelope-open-text"></i> Sua Mensagem / Função no Bando:</label>
-                    <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conta-nos a tua história, recompensa ou habilidade principal..." required></textarea>
+                    <label for="email-contato">E-mail de Contato:</label>
+                    <input type="email" id="email-contato" name="email" placeholder="exemplo@marpirata.com">
                 </div>
-                <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Enviar Sinal de Recrutamento</button>
+                <div class="form-group">
+                    <label for="mensagem-contato">Sua Mensagem / Função no Bando:</label>
+                    <textarea id="mensagem-contato" name="mensagem" rows="3" placeholder="Conta-nos a tua história, recompensa ou habilidade principal..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Sinal de Recrutamento</button>
             </form>
 
+            <div id="feedback-form" class="feedback-form"></div>
+
             <div class="redes-sociais">
-                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://discord.com" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://discord.com" target="_blank" aria-label="Discord">Discord</a>
             </div>
         </section>
 
@@ -154,5 +164,6 @@
         <p>&copy; 2026 Ficha de RPG | Dante D. Vance</p>
     </footer>
 
+    <script src="js/javas.js"></script>
 </body>
 </html>
