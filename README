@@ -1,37 +1,37 @@
-# 🏴‍☠️ Pirate RPG Character Sheet — Dante D. Vance
+# 🏴‍☠️ Ficha de Personagem RPG — Dante D. Vance
 
-> An interactive, responsive pirate-themed RPG character sheet built with vanilla **HTML5**, **CSS3**, and **JavaScript**, blending elements inspired by **One Piece** and **Assassin's Creed IV: Black Flag**.
-
----
-
-## ⚓ Creator
-
-* **Creator:** Gabriel de Arruda França
+> Ficha de personagem interativa e responsiva com temática pirata, desenvolvida em **HTML5**, **CSS3** e **JavaScript** puro, misturando referências de **One Piece** e **Assassin's Creed IV: Black Flag**.
 
 ---
 
-## ✨ Features
+## ⚓ Criador
 
-* **Sticky Navigation & Mobile Drawer:** Quick jump links across sections (`About`, `Attributes`, `Inventory`, `Contact`) with a responsive hamburger drawer menu for mobile screens.
-* **Light & Dark Theme Toggle:** Full theme switching across the entire layout, cards, header, footer, and inventory items.
-* **Hero Overview & Expandable Lore:** Character profile for **Dante D. Vance ("O Ruivo")**, Captain of the **Gryphon** crew, bounty badge (`480,000,000 Berries`), origin details, and a toggleable full backstory.
-* **Interactive XP & Leveling System:** Mission reward button (`+25 XP`) that updates the progress bar, levels up the character upon reaching `100 XP`, and resets the bar cleanly.
-* **Dynamic Inventory & Category Filters:** Rendered from a JavaScript object array using `forEach` and `.filter()` (`All`, `Weapons`, `Potions`, `Treasures`, `Tools`) with item count and rarity badges.
-* **Crew Recruitment Form:** Client-side form validation (`preventDefault`) checking name, valid `@` email, and message with instant visual feedback.
-* **Treasure Map Side Backdrop:** Fixed treasure map background (`MARLOGO.jfif`) framing the layout behind the central cards.
+* **Criador:** Gabriel de Arruda França
 
 ---
 
-## 🛠️ Built With
+## ✨ Funcionalidades
 
-* **HTML5** — Semantic structure (`<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`).
-* **CSS3** — CSS custom properties (`:root` & `.dark-mode`), Flexbox, CSS Grid, and responsive media queries.
-* **JavaScript (ES6+)** — DOM manipulation, array filtering/rendering, state logic, and form validation.
-* **Google Fonts** — *Cinzel* for headings and *Open Sans* for body text.
+* **Navegação Fixa e Menu Mobile:** Links rápidos entre as seções (`Sobre`, `Atributos`, `Inventário`, `Contato`) com menu hambúrguer responsivo no celular.
+* **Alternância de Tema (Claro e Escuro):** Troca de tema aplicada em toda a página, incluindo cabeçalho, rodapé, cards, campos e itens do inventário.
+* **Perfil do Herói e História Expansível:** Apresentação de **Dante D. Vance ("O Ruivo")**, Capitão da tripulação **Gryphon**, badge de recompensa (`480.000.000 Berries`), dados de origem e botão para expandir ou recolher a história completa.
+* **Sistema Interativo de XP e Nível:** Botão de missão (`+25 XP`) que atualiza a barra de progresso, sobe de nível ao atingir `100 XP` e reseta a barra corretamente.
+* **Inventário Dinâmico com Filtros:** Renderizado a partir de um array de objetos no JavaScript com `forEach` e `.filter()` (`Todos`, `Armas`, `Poções`, `Tesouros`, `Ferramentas`), mostrando contagem de itens e raridade.
+* **Formulário de Recrutamento:** Validação com `preventDefault` verificando nome, e-mail válido com `@` e mensagem, exibindo feedback na tela.
+* **Fundo com Mapa do Tesouro nas Laterais:** Plano de fundo fixo com o mapa (`MARLOGO.jfif`) aparecendo nas laterais ao redor dos cards centrais.
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5:** Estruturação semântica (`<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`).
+* **CSS3:** Variáveis CSS (`:root` e `.dark-mode`), Flexbox, CSS Grid e media queries para responsividade.
+* **JavaScript (ES6+):** Manipulação do DOM, renderização e filtragem de arrays, controle de estado e validação de formulário.
+* **Google Fonts:** Fontes *Cinzel* para títulos e *Open Sans* para textos.
+
+---
+
+## 📁 Estrutura de Pastas e Arquivos
 
 ```text
 .
