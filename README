@@ -1,33 +1,47 @@
-# 🏴‍☠️ Ficha de Personagem RPG - Dante D. Vance
+# 🏴‍☠️ Pirate RPG Character Sheet — Dante D. Vance
 
-Projeto desenvolvido para a disciplina de Desenvolvimento Web (HTML5 & CSS3). O objetivo foi criar uma ficha de personagem interativa e responsiva para um RPG com temática pirata, combinando elementos do universo de **One Piece** e **Assassin's Creed IV: Black Flag**.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **HTML5**: Estruturação semântica do documento (`<header>`, `<main>`, `<section>`, `<footer>`).
-- **CSS3**: Estilização moderna com CSS Variables, Flexbox, CSS Grid e media queries para responsividade.
-- **Font Awesome (v6.4.0)**: Ícones temáticos de interface e redes sociais.
-- **Google Fonts**: Integração das fontes *Cinzel* e *Open Sans*.
+> An interactive, responsive pirate-themed RPG character sheet built with vanilla **HTML5**, **CSS3**, and **JavaScript**, blending elements inspired by **One Piece** and **Assassin's Creed IV: Black Flag**.
 
 ---
 
-## 📌 Funcionalidades da Página
+## ⚓ Creator
 
-1. **Cabeçalho Fixo (Navbar):** Navegação rápida com links para as principais secções.
-2. **Sobre o Herói:** Apresentação da personagem, dados de origem, recompensa em Berries e biografia.
-3. **Atributos & Habilidades:** Barras de progresso visuais a indicar os pontos fortes de combate e furtividade.
-4. **Inventário & Conquistas:** *Cards* com grelha adaptável (CSS Grid) e indicadores de raridade (*Lendário*, *Raro*, *Comum*).
-5. **Alistar-se à Tripulação (Contato):** Formulário de recrutamento interativo acompanhado por botões com atalhos diretos para GitHub e Discord.
+* **Creator:** Gabriel de Arruda França
 
 ---
 
-## 📂 Estrutura de Ficheiros
+## ✨ Features
+
+* **Sticky Navigation & Mobile Drawer:** Quick jump links across sections (`About`, `Attributes`, `Inventory`, `Contact`) with a responsive hamburger drawer menu for mobile screens.
+* **Light & Dark Theme Toggle:** Full theme switching across the entire layout, cards, header, footer, and inventory items.
+* **Hero Overview & Expandable Lore:** Character profile for **Dante D. Vance ("O Ruivo")**, Captain of the **Gryphon** crew, bounty badge (`480,000,000 Berries`), origin details, and a toggleable full backstory.
+* **Interactive XP & Leveling System:** Mission reward button (`+25 XP`) that updates the progress bar, levels up the character upon reaching `100 XP`, and resets the bar cleanly.
+* **Dynamic Inventory & Category Filters:** Rendered from a JavaScript object array using `forEach` and `.filter()` (`All`, `Weapons`, `Potions`, `Treasures`, `Tools`) with item count and rarity badges.
+* **Crew Recruitment Form:** Client-side form validation (`preventDefault`) checking name, valid `@` email, and message with instant visual feedback.
+* **Treasure Map Side Backdrop:** Fixed treasure map background (`MARLOGO.jfif`) framing the layout behind the central cards.
+
+---
+
+## 🛠️ Built With
+
+* **HTML5** — Semantic structure (`<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`).
+* **CSS3** — CSS custom properties (`:root` & `.dark-mode`), Flexbox, CSS Grid, and responsive media queries.
+* **JavaScript (ES6+)** — DOM manipulation, array filtering/rendering, state logic, and form validation.
+* **Google Fonts** — *Cinzel* for headings and *Open Sans* for body text.
+
+---
+
+## 📁 Project Structure
 
 ```text
-├── index.html
+.
+├── README.md
+├── rpg.html
 ├── css/
 │   └── style.css
+├── js/
+│   └── javas.js
 └── img/
-    └── pirata.jpg
+    ├── pirata.jpg
+    ├── procurado.jpg
+    └── MARLOGO.jfif
